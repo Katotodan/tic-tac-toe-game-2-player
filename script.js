@@ -56,11 +56,11 @@ player1_displayer.style.color = `var(--secondary-color)`;
 const over = () =>{
     game_over.style.display = "block";
     if(player1 === true){
-        score2++;
-        document.querySelector("div.game_over p").innerHTML = `Play 2 win 🎉🎉🎉!!!`;
-    }else{
         score1++;
         document.querySelector("div.game_over p").innerHTML = `Play 1 win 🎉🎉🎉!!!`;
+    }else{
+        score2++;
+        document.querySelector("div.game_over p").innerHTML = `Play 2 win 🎉🎉🎉!!!`;
     }
     scoreDisplayer();
     notTie = false;
